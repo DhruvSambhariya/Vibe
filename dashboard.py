@@ -24,8 +24,9 @@ st.markdown(
 
 
 
-SUPABASE_URL = os.getenv("SUPABASE_URL") or st.secrets.get("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY") or st.secrets.get("SUPABASE_KEY")
+SUPABASE_URL = os.getenv("SUPABASE_URL") or st.secrets.get("https://pilugvwacmjoopvcuomj.supabase.co")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY") or st.secrets.get("sb_secret_9be5T
+8d95pqk3KpsCSwv3Q_DPbCn4FA")
 
 if not SUPABASE_URL or not SUPABASE_KEY:
     st.error("Supabase credentials missing")
