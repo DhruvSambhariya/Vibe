@@ -8,8 +8,9 @@ from supabase import create_client
 load_dotenv()
 
 
-SUPABASE_URL = os.getenv("SUPABASE_URL") or ""
-SUPABASE_KEY = os.getenv("SUPABASE_KEY") or ""
+SUPABASE_URL = os.getenv("SUPABASE_URL") or "https://pilugvwacmjoopvcuomj.supabase.co"
+SUPABASE_KEY = os.getenv("SUPABASE_KEY") or "sb_secret_9be5T
+8d95pqk3KpsCSwv3Q_DPbCn4FA"
 
 if not SUPABASE_URL or not SUPABASE_KEY:
     raise ValueError("Supabase credentials not found in .env file")
